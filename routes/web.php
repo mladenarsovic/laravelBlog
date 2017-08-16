@@ -8,7 +8,6 @@ Route::post('/posts', 'PostsController@store');
 
 Route::post('/posts/{id}/comment', 'CommentsController@store');
 
-
 Route::get('/register','RegisterController@create');
 Route::post('/register', 'RegisterController@store');
 
@@ -18,3 +17,5 @@ Route::get('/login', 'LoginController@create')->name('login');
 Route::post('/login', 'LoginController@store');
 
 Route::get('/users/{id}', 'UsersController@show');
+
+Route::get('posts/tags/{tag}', 'TagsController@index');
