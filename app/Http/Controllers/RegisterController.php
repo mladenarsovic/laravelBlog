@@ -45,6 +45,8 @@ class RegisterController extends Controller
 
     	auth()->login($user);
 
+        session()->flash('message', 'Thanks for registration');
+
     	return redirect('/posts');
 
 
