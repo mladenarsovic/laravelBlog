@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <h2 class="blog-post-title">User: {{ $user->name }}</h2>
+    <h2 class="blog-post-title">User: {{ $user->name }}</h2><br>
    
     
     @foreach($user->posts as $post)
