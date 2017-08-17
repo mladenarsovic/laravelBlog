@@ -30,9 +30,8 @@
             href="{{ $posts->nextPageUrl() }}">
 
                 Next
-        </a><br>
-
-        Page {{ $posts->currentPage() }} of {{ $posts->lastPage() }}
+        
+        </a>    Page {{ $posts->currentPage() }} of {{ $posts->lastPage() }}
 
     </nav>
 
